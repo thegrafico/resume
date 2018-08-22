@@ -6,29 +6,34 @@
     box-sizing: border-box;
   }
   .container{
-    min-width: 80%;
-    max-width: 80%;
     display: flex;
-    border: 1px solid red;
   }
   .infoDescription{
     width: 45%;
-    height: 400px;
-    background-color: #292a2a;
+    height: 500px;
+    position: relative;
+  }
+  #miImg{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    border-color: red;
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    right: 15%;
   }
 
   .description{
-  max-width: 65%;
-  min-width: 65%;
-  max-height: 400px;
-  min-height: 400px;
-  background-color: #2d2e2e;
+    max-width: 65%;
+    min-width: 65%;
+    background-color: #2d2e2e;
   }
 
   .center{
     position: relative;
-    min-width: 80%;
-    max-width: 80%;
+    min-width: 75%;
+    max-width: 75%;
     height: 80%;
     display:block;
     margin-left: auto;
@@ -44,6 +49,7 @@
   .center h1{
     color:#a4a5a6;
     font-weight: lighter;
+    font-size: 3em;
   }
 
   .center h1 span{
@@ -85,6 +91,48 @@
     color:#a4a5a6;
     margin-bottom: 6px;
   }
+
+  .resumen{
+    padding-top: 40px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .resumen p{
+    text-align: justify;
+    color: #a4a5a6;
+    font-size: 1.2em;
+  }
+  .whoIAm{
+    position: relative;
+  }
+
+  .whoIAm div{
+    color: #a4a5a6;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .whoIAm h3{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    text-align: right;
+  }
+
+  /* backgroundcolor */
+  .color1{
+    background-color: #292a2a;
+  }
+
+  .color2{
+    background-color: #2d2e2e;
+  }
+  /*---------------------------*/
+  /*-------------------------PART 2 --------------------*/
+
+
+
 
     /*
       color:#838c8e;
