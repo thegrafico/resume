@@ -10,7 +10,8 @@
   }
   .infoDescription{
     width: 45%;
-    height: 500px;
+    min-height: 500px;
+    max-height: 800px;
     position: relative;
   }
   #miImg{
