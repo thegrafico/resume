@@ -254,13 +254,17 @@
 
   <script type="text/javascript">
 
-  var loadOneTime = 0;
+  var loadOneTine = 1;
 
   var waypoint = new Waypoint({
     element: document.getElementById('laBestia'),
     handler: function(direction) {
-      move("a1", 95);
-      move("a2", 80);
+      if(loadOneTine == 1){
+        move("a1", 95);
+        move("a2", 80);
+        loadOneTine++;
+      }
+    }
   })
 
     // FUNTION TO MOVE PROGESS BAR
