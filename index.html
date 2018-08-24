@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="public/css/index.css">
+  <script src="./waypoints/lib/noframework.waypoints.min.js" charset="utf-8"></script>
   <title>Resume</title>
 </head>
 <body>
@@ -101,9 +102,10 @@
   <div class="container">
 
     <div class="infoDescription whoIAm color1">
-      <div>
+      <div id="laBestia">
         <h3>Expertise</h3>
         <p>The best I've learned from the best teachers</p>
+
       </div>
     </div>
 
@@ -116,7 +118,7 @@
         <div class="expertise">
 
           <h3><span>01</span> HTML</h3>
-          <div id="hideP">
+          <div class="hideP">
             <p>
               HTML is the skeleton of our website.Through tag we design the structure of our website.
               All the web pages created today are made up of HTML. It is easy and fun to learn, because you see what you are building.
@@ -129,7 +131,7 @@
         <div class="expertise">
 
           <h3><span>02</span> ADVANCED CSS</h3>
-          <div id="hideP">
+          <div class="hideP">
             <p>
               CSS is the way that we can dress up our web page. I have 2 years working with the design on web page. knowledgen on the basic and advanced topic of CSS.
                Creating Web Design from scratch and in the same way creating an advanced web page in work.
@@ -146,7 +148,7 @@
         <div class="expertise">
 
           <h3><span>03</span> Javascript & JQuery</h3>
-          <div id="hideP">
+          <div class="hideP">
             <p>
               Javascript is a programming languaje used for every you can imagine. With this languaje you can do web development, game creations, Connection to Data base system and so on.
               JQUERY is based in Javascript, is used for get elements really fast and easy. JQuery simplify the work of Javascript.
@@ -159,7 +161,7 @@
         <div class="expertise">
 
           <h3><span>04</span> Node Js</h3>
-          <div id="hideP">
+          <div class="hideP">
             <p>
               Node Js is a Javascript run-time enviroment used to create web development. With Node Js you can be a full-stack-developer, thus, can create a web page and all of the internal
               funtionalities.
@@ -175,7 +177,7 @@
         <div class="expertise">
 
           <h3><span>05</span> mySQL & MongoDB</h3>
-          <div id="hideP">
+          <div class="hideP">
             <p>
               mySQL and mongoDB are database system that store all information we want. mySQL is one of the most DB used today, however,
               mongoDB is a super powerful data base, easy to learn, implement and understand.
@@ -188,7 +190,7 @@
         <div class="expertise">
 
           <h3><span>06</span> Android Studio</h3>
-          <div id="hideP">
+          <div class="hideP">
             <p>
               Android Studio is a software to program aplications to android phones. Is world wide used and have the best tools to program whatever you want.
               One of the best think tha have android studio is that you can created app for free, without paying anything.
@@ -216,28 +218,31 @@
       <!-- DIV DIVITION -->
       <div class="center" style="display:flex;">
 
-        <!-- HTML DATA -->
+        <!-- PROGRESS BAR FAST-->
         <div class="expertise">
 
-          <h3><span>01</span> HTML</h3>
-          <div id="hideP">
-            <p>
-              HTML is the skeleton of our website.Through tag we design the structure of our website.
-              All the web pages created today are made up of HTML. It is easy and fun to learn, because you see what you are building.
-            </p>
-          </div>
+          <h3><span>95%</span> Fast Learning</h3>
 
+          <div class="progressBar">
+
+            <div class="animationProgressBar" id="a1">
+
+            </div>
+
+          </div>
         </div>
 
-        <!-- CSS DATA -->
+        <!-- PROGRESS BAR JAVA -->
         <div class="expertise">
 
-          <h3><span>02</span> ADVANCED CSS</h3>
-          <div id="hideP">
-            <p>
-              CSS is the way that we can dress up our web page. I have 2 years working with the design on web page. knowledgen on the basic and advanced topic of CSS.
-               Creating Web Design from scratch and in the same way creating an advanced web page in work.
-            </p>
+          <h3><span>80%</span> Java/ c++/ c#</h3>
+
+          <div class="progressBar">
+
+            <div class="animationProgressBar" id="a2">
+
+            </div>
+
           </div>
 
         </div>
@@ -246,5 +251,31 @@
 
     </div>
   </div>
+
+  <script type="text/javascript">
+
+  var waypoint = new Waypoint({
+    element: document.getElementById('laBestia'),
+    handler: function(direction) {
+      move("a1", 95);
+      move("a2", 80);
+    }
+  })
+
+    // FUNTION TO MOVE PROGESS BAR
+    function move(id,porciento) {
+      var elem = document.getElementById(id);
+      var width = 1;
+      var id = setInterval(frame, 20);
+      function frame() {
+        if (width >= porciento) {
+          clearInterval(id);
+        } else {
+          width++;
+          elem.style.width = width + '%';
+        }
+      }
+    }
+  </script>
 </body>
 </html>
