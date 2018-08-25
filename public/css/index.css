@@ -206,8 +206,8 @@
   }
   .borderCoolbotton{
     width: 2px;
-    height: 50%;
-    top: 45%;
+    height: 55%;
+    top: 40%;
     background-color: rgba(133, 138, 143,0.5);
     position: absolute;
   }
@@ -250,10 +250,9 @@
     position: absolute;
     top: 20%;
   }
-  /* END EXPERIENCES */
+  /*--------------------------------- */
 
   /* EDUCATION DIV */
-
 
   .education_info span:nth-child(1) {
     font-size: 1.2em;
@@ -265,32 +264,20 @@
     color: #d4e5f6;
     text-align: center;
   }
+  /* --------------------------- */
 
+  /* CONTACT */
+  .contact_info{
+    margin-top: 40px;
+    text-align: center;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
-      color:#838c8e;
-      color:#e9b807;
-      #2d2e2e
-      #292a2a
-      #2b2c2c
-    */
+  .redesSociales{
+    display: flex;
+  }
+  .redesSociales div{
+    font-size: 5em;
+    margin-top: 50px;
+    width: 25%;
+    padding-left: 5px;
+  }
