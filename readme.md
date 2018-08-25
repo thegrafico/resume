@@ -1,5 +1,7 @@
-Para visualizar se debe abrir el Index.html
+This website is static, it will not change. I made sure that this part is just design. However, later I will be programming this web in Node Js to make it dynamic and that different users can enter their data and obtain the same result that we can observe now.
 
-Esto se una web basada en mi resume. ahora mismo solo cuenta con la parte del design.
-En los siguientes dias ire transformado esta web en dinamica, usando NODE JS y que cualquier persona
-ingrese sus datos y la web los muestres de manera correcta siguiendo el estilo que tiene en este momento. 
+** THIS WEB IS ONLY THE DESIGN
+
+//---------------------
+Open index.html
+//--------------------
