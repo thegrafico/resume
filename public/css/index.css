@@ -196,6 +196,30 @@
     background-color: #e9b807;
     left: -5px;
   }
+  .smallBorder{
+    position: absolute;
+    top: 0px;
+    left: 12.5%;
+    width: 2px;
+    height: 25px;
+    background-color:  rgba(133, 138, 143,0.5);
+  }
+  .borderCoolbotton{
+    width: 2px;
+    height: 50%;
+    top: 45%;
+    background-color: rgba(133, 138, 143,0.5);
+    position: absolute;
+  }
+  .borderCoolbottonFlat{
+    width: 22px;
+    height: 2px;
+    left: -10px;
+    bottom: 8px;
+    background-color: rgba(133, 138, 143,0.5);
+    position: absolute;
+
+  }
   /* ----------------------- */
   .experience_info span{
     display: block;
@@ -226,10 +250,21 @@
     position: absolute;
     top: 20%;
   }
+  /* END EXPERIENCES */
+
+  /* EDUCATION DIV */
 
 
-
-
+  .education_info span:nth-child(1) {
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(212, 229, 246, 0.2);
+    text-align: center;
+  }
+  .hideP li{
+    padding-bottom: 2px;
+    color: #d4e5f6;
+    text-align: center;
+  }
 
 
 
