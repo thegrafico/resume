@@ -144,6 +144,7 @@
     margin-right: 40px;
     max-height: 250px;
   }
+
   .expertise span{
     font-size: 1.2em;
     color: #e0a80d;
@@ -181,31 +182,75 @@
 
   /* BORDER COOL FOR EXPERIENCE */
   .borderCool{
-    border:1px solid red;
+    width: 2px;
+    height: 75%;
+    top: 40%;
+    background-color: rgba(133, 138, 143,0.5);
+    position: absolute;
   }
-
-  /* .animationProgressBar{
-    width: 1%;
-    height: 10px;
+  .borderCoolBall{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
     background-color: #e9b807;
-
+    left: -5px;
   }
-   .animationProgressBar{
-    height: 10px;
-    background-color: #e9b807;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 4s;     animation-name: example;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    }
-
-
-@keyframes example {
-    0%   {width: 0%;}
-    100% {width: 95%;}
-} */
-
   /* ----------------------- */
+  .experience_info span{
+    display: block;
+    margin-bottom: 10px;
+    color: #d4e5f6;
+
+  }
+  .experience_info span:nth-child(1) {
+    font-size: 0.9em;
+  }
+  .experience_info span:nth-child(2) {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .experience_info span:nth-child(3) {
+    font-size: 0.9em;
+  }
+  .experience_info span:nth-child(4) {
+    font-size: 0.9em;
+  }
+  .experience_info span:nth-child(5) {
+    font-size: 0.9em;
+  }
+  .aligTex p{
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /*
       color:#838c8e;
