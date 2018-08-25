@@ -139,7 +139,7 @@
   /* PART 3 */
 
   .expertise{
-    margin-top: 20px;
+    margin-top: 40px;
     width: 45%;
     margin-right: 40px;
     max-height: 250px;
@@ -175,7 +175,14 @@
     background-color: #e9b807;
   }
 
+  .pgBar{
+    margin-bottom: 40px;
+  }
 
+  /* BORDER COOL FOR EXPERIENCE */
+  .borderCool{
+    border:1px solid red;
+  }
 
   /* .animationProgressBar{
     width: 1%;
