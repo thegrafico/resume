@@ -3,5 +3,6 @@ This website is static, it will not change. I made sure that this part is just d
 ** THIS WEB IS ONLY THE DESIGN
 
 //---------------------
-Open index.html
+1. download or clone this repository
+2. Open index.html
 //--------------------
