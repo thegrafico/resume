@@ -1,62 +1,33 @@
+@media screen and (max-width:411px) {
 
   *{
     font-family: 'Inconsolata', monospace;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+
   }
+
   .container{
-    display: flex;
-  }
-  .infoDescription{
-    width: 45%;
-    min-height: 500px;
-    max-height: 800px;
-    position: relative;
+    background-color: #292a2a;
+    width: 100%;
+
   }
   #miImg{
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    border-color: red;
+    width: 250px;
+    height: 250px;
     background-size: cover;
-    position: absolute;
-    top: 20%;
-    right: 15%;
-  }
-
-  .description{
-    max-width: 65%;
-    min-width: 65%;
-    background-color: #2d2e2e;
-    position: relative;
-  }
-
-  .center{
-    position: relative;
-    width: 75%;
-    height: auto;
-    display:block;
-    margin-left: auto;
+    display: block;
     margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
   }
-
-  .centerheight {
-    width: 100%;
-    position: absolute;
-    top: 150px;
-  }
-  .centerheight2{
-    position: absolute;
-    top:80%;
-    left: 12.5%;
-  }
-
-
-  .center .nombre{
+  .nombre{
     color:#a4a5a6;
     font-weight: lighter;
-    font-size: 3em;
+    font-size: 1.3em;
+    text-align: center;
   }
 
   .center .nombre span{
@@ -64,105 +35,57 @@
     font-size: 1.5em;
     font-weight: bold;
   }
-
-  .socialMedia{
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    overflow: hidden;
+  .expertise{
+    display: block;
   }
-  .socialMedia p{
+  .flexDisplay{
+    background-color: #292a2a;
+  }
+
+  .textAlineCenter{
+    text-align: center;
     color:#a4a5a6;
+    padding: 10px;
   }
-
-  .studentbackground{
-    width: 100%;
-  }
-
-  .links{
-    width: 12%;
-  }
-  .links span{
+  .textAlineCenter span{
     font-size: 1.5em;
-    color:#a4a5a6;
   }
 
   .personalInfo{
-    border-top: 1.5px solid rgba(164, 165, 166, 0.5);
-    display: flex;
-  }
-  .personalInfo div{
-    width: 25%;
-  }
-  .personalInfo p{
-    color:#a4a5a6;
-    margin-bottom: 6px;
-  }
-
-  /*-------------------------PART 2 --------------------*/
-  .resumen{
-    padding-top: 40px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .resumen p{
-    text-align: justify;
-    color: #a4a5a6;
-    font-size: 1.2em;
-  }
-  .whoIAm{
-    position: relative;
+    display: none;
   }
 
   .whoIAm div{
-    color: #a4a5a6;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
+    background-color:#313737;
+    color: rgb(212, 229, 246);
 
-  .whoIAm h3{
-    font-size: 1.5em;
-    padding-bottom: 10px;
-    text-align: right;
+    padding: 6px;
   }
-/*------------------------------------------------------*/
-  /* backgroundcolor */
-  .color1{
-    background-color: #292a2a;
+  .resumen {
+    padding: 15px;
+    font-size: 1.3em;
+    text-align: justify;
+    color: rgba(212, 229, 246,0.5);
   }
-  .color2{
-    background-color: #2d2e2e;
-  }
-  /*---------------------------*/
-  /* PART 3 */
-
+  /* -----EXPErtiSE */
   .expertise{
-    margin-top: 40px;
-    width: 45%;
-    margin-right: 40px;
-    max-height: 250px;
+    padding: 15px;
+    font-size: 1.2em;
+    color: rgba(212, 229, 246,0.5);
   }
 
   .expertise span{
-    font-size: 1.2em;
+    font-size: 1em;
     color: #e0a80d;
   }
   .expertise h3{
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
-    color:#a4a5a6;
+    color: rgb(212, 229, 246);
   }
-  .hideP{
-    text-align: left;
-    margin-left: 30px;
-    height: 150px;
-    overflow: hidden;
-    color:#a4a5a6;
-    padding: 5px;
-  }
-  /* PROGRESS BAR  */
+
+  /* ---PROGRESS BAR */
+
   .progressBar{
     margin-top: 5px;
     width: 100%;
@@ -177,107 +100,357 @@
   }
 
   .pgBar{
-    margin-bottom: 40px;
+    margin-bottom: 20;
   }
-
-  /* BORDER COOL FOR EXPERIENCE */
-  .borderCool{
-    width: 2px;
-    height: 75%;
-    top: 40%;
-    background-color: rgba(133, 138, 143,0.5);
-    position: absolute;
-  }
-  .borderCoolBall{
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #e9b807;
-    left: -5px;
-  }
-  .smallBorder{
-    position: absolute;
-    top: 0px;
-    left: 12.5%;
-    width: 2px;
-    height: 25px;
-    background-color:  rgba(133, 138, 143,0.5);
-  }
-  .borderCoolbotton{
-    width: 2px;
-    height: 55%;
-    top: 40%;
-    background-color: rgba(133, 138, 143,0.5);
-    position: absolute;
-  }
-  .borderCoolbottonFlat{
-    width: 22px;
-    height: 2px;
-    left: -10px;
-    bottom: 8px;
-    background-color: rgba(133, 138, 143,0.5);
-    position: absolute;
-
-  }
-  /* ----------------------- */
+  /* ----Experience---- */
   .experience_info span{
     display: block;
     margin-bottom: 10px;
-    color: #d4e5f6;
+    color: rgba(212, 229, 246,0.5);
 
-  }
-  .experience_info span:nth-child(1) {
     font-size: 0.9em;
   }
   .experience_info span:nth-child(2) {
     font-size: 1.2em;
     font-weight: bold;
   }
-  .experience_info span:nth-child(3) {
+  .experience_info span:nth-child(6) {
     font-size: 0.9em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(133, 138, 143,0.5);
   }
-  .experience_info span:nth-child(4) {
-    font-size: 0.9em;
+  .aligTex{
+    display: none;
   }
-  .experience_info span:nth-child(5) {
-    font-size: 0.9em;
-  }
-  .aligTex p{
-    text-align: left;
-    font-size: 1.4em;
-    font-weight: bold;
-    position: absolute;
-    top: 20%;
-  }
-  /*--------------------------------- */
-
-  /* EDUCATION DIV */
-
-  .education_info span:nth-child(1) {
-    font-size: 1.2em;
-    border-bottom: 1px solid rgba(212, 229, 246, 0.2);
-    text-align: center;
-  }
-  .hideP li{
-    padding-bottom: 2px;
-    color: #d4e5f6;
-    text-align: center;
-  }
-  /* --------------------------- */
-
-  /* CONTACT */
-  .contact_info{
-    margin-top: 40px;
-    text-align: center;
+  .hide_in_phone{
+    display: none;
   }
 
+  .border_phone{
+    border-bottom: 1px solid rgba(133, 138, 143,0.5);
+    border-top: 1px solid rgba(133, 138, 143,0.5);
+    padding: 20px 0;
+  }
+  /* ---CONTACME-------- */
+  #phone_info{
+    display: block;
+    color: rgba(212, 229, 246,0.5);
+
+  }
+
+  #phone_info div{
+    margin-left: 15px;
+    padding: 25px;
+    width: 45%;
+    float: left;
+  }
   .redesSociales{
+    clear: left;
+    color: rgba(212, 229, 246,0.5);
     display: flex;
   }
   .redesSociales div{
-    font-size: 5em;
-    margin-top: 50px;
-    width: 25%;
-    padding-left: 5px;
+    padding: 10%;
   }
+
+
+  /* -----COLORS */
+  .color1{
+    background-color: #292a2a;
+  }
+  .color2{
+    background-color: #313737;
+  }
+  /* ----------------------- */
+
+}
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media screen and (min-width:1024px) {
+
+    *{
+      font-family: 'Inconsolata', monospace;
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    .show_only_in_Phone{
+      display: none;
+    }
+    .container{
+      display: flex;
+    }
+    .infoDescription{
+      width: 45%;
+    }
+    #miImg{
+      border-radius: 50%;
+      width: 350px;
+      height: 350px;
+      background-size: cover;
+      display: block;
+      margin-right: 40px;
+      margin-left: auto;
+      margin-top: 65px;
+      margin-bottom: 60px;
+    }
+
+    .description{
+      width: 65%;
+      background-color: #2d2e2e;
+    }
+
+    .center{
+      position: relative;
+      width: 75%;
+      height: auto;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .center .nombre{
+      color:#a4a5a6;
+      font-weight: lighter;
+      font-size: 3em;
+    }
+
+    .center .nombre span{
+      color: #e0a80d;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .marginTop{
+      margin-top: 120px;
+    }
+
+    .socialMedia{
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+    }
+    .socialMedia p{
+      color:#a4a5a6;
+    }
+
+    .studentbackground{
+      width: 100%;
+    }
+
+    .links{
+      width: 12%;
+    }
+    .links span{
+      font-size: 1.5em;
+      color:#a4a5a6;
+    }
+
+    .personalInfo{
+      border-top: 1.5px solid rgba(164, 165, 166, 0.5);
+      margin-top: 80px;
+    }
+    .personalInfo div{
+      width: 25%;
+      float: left;
+    }
+    .personalInfo p{
+      color:#a4a5a6;
+      margin-bottom: 6px;
+    }
+
+    /*-------------------------PART 2 --------------------*/
+    .resumen{
+      padding-top: 40px;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .resumen p{
+      text-align: justify;
+      color: #a4a5a6;
+      font-size: 1.2em;
+    }
+
+    .whoIAm{
+      position: relative;
+    }
+
+    .whoIAm div{
+      color: #a4a5a6;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .whoIAm h3{
+      font-size: 1.5em;
+      padding-bottom: 10px;
+      text-align: right;
+    }
+  /*------------------------------------------------------*/
+    /* backgroundcolor */
+    .color1{
+      background-color: #292a2a;
+    }
+    .color2{
+      background-color: #2d2e2e;
+    }
+    /*---------------------------*/
+    /* PART 3 */
+
+    .expertise{
+      margin-top: 40px;
+      width: 45%;
+      margin-right: 40px;
+      max-height: 250px;
+    }
+
+    .expertise span{
+      font-size: 1.2em;
+      color: #e0a80d;
+    }
+    .expertise h3{
+      font-size: 1.2em;
+      font-weight: bold;
+      color:#a4a5a6;
+    }
+    .hideP{
+      text-align: left;
+      margin-left: 30px;
+      height: 150px;
+      overflow: hidden;
+      color:#a4a5a6;
+      padding: 5px;
+    }
+    /* PROGRESS BAR  */
+    .progressBar{
+      margin-top: 5px;
+      width: 100%;
+      height: 10px;
+      background-color: #404242;
+    }
+
+    .animationProgressBar{
+      width: 1%;
+      height: 10px;
+      background-color: #e9b807;
+    }
+
+    .pgBar{
+      margin-bottom: 40px;
+    }
+
+    /* BORDER COOL FOR EXPERIENCE */
+    .borderCool{
+      width: 2px;
+      height: 75%;
+      top: 40%;
+      background-color: rgba(133, 138, 143,0.5);
+      position: absolute;
+    }
+    .borderCoolBall{
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #e9b807;
+      left: -5px;
+    }
+    .smallBorder{
+      position: absolute;
+      top: 0px;
+      left: 12.5%;
+      width: 2px;
+      height: 25px;
+      background-color:  rgba(133, 138, 143,0.5);
+    }
+    .borderCoolbotton{
+      width: 2px;
+      height: 55%;
+      top: 40%;
+      background-color: rgba(133, 138, 143,0.5);
+      position: absolute;
+    }
+    .borderCoolbottonFlat{
+      width: 22px;
+      height: 2px;
+      left: -10px;
+      bottom: 8px;
+      background-color: rgba(133, 138, 143,0.5);
+      position: absolute;
+
+    }
+    /* ----------------------- */
+    .experience_info span{
+      display: block;
+      margin-bottom: 10px;
+      color: #d4e5f6;
+
+    }
+    .experience_info span:nth-child(1) {
+      font-size: 0.9em;
+    }
+    .experience_info span:nth-child(2) {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .experience_info span:nth-child(3) {
+      font-size: 0.9em;
+    }
+    .experience_info span:nth-child(4) {
+      font-size: 0.9em;
+    }
+    .experience_info span:nth-child(5) {
+      font-size: 0.9em;
+    }
+    .aligTex p{
+      text-align: left;
+      font-size: 1.4em;
+      font-weight: bold;
+      position: absolute;
+      top: 20%;
+    }
+    /*--------------------------------- */
+
+    /* EDUCATION DIV */
+
+    .education_info span:nth-child(1) {
+      font-size: 1.2em;
+      border-bottom: 1px solid rgba(212, 229, 246, 0.2);
+      text-align: center;
+    }
+    .hideP li{
+      padding-bottom: 2px;
+      color: #d4e5f6;
+      text-align: center;
+    }
+    /* --------------------------- */
+
+    /* CONTACT */
+    .contact_info{
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .redesSociales{
+      display: flex;
+    }
+    .redesSociales div{
+      font-size: 5em;
+      margin-top: 50px;
+      width: 25%;
+      padding-left: 5px;
+    }
+
+    .flexDisplay{
+      display: flex;
+    }
+  /* ---------------------------------------------- */
+    .nombre_apellido_margin_top{
+      margin-top: 150px;
+    }
+}
