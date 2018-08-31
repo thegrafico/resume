@@ -1,4 +1,4 @@
-@media screen and (max-width:420px) {
+@media screen and (max-width:720px) {
 
   *{
     font-family: 'Inconsolata', monospace;
@@ -133,16 +133,12 @@
   }
   /* ---CONTACME-------- */
   #phone_info{
-    display: block;
+    display: inline;
     color: rgba(212, 229, 246,0.5);
-
   }
-
   #phone_info div{
-    margin-left: 15px;
     padding: 20px;
-    max-width: 45%;
-    float: left;
+    width: 45%;
   }
   .redesSociales{
     clear: left;
@@ -151,175 +147,6 @@
   }
   .redesSociales div{
     padding: 10%;
-  }
-
-
-  /* -----COLORS */
-  .color1{
-    background-color: #292a2a;
-  }
-  .color2{
-    background-color: #313737;
-  }
-  /* ----------------------- */
-
-}
-
-@media screen and (max-width:800px) {
-
-  *{
-    font-family: 'Inconsolata', monospace;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-
-  }
-
-  .container{
-    background-color: #292a2a;
-    width: 100%;
-
-  }
-  #miImg{
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-  }
-  .nombre{
-    color:#a4a5a6;
-    font-weight: lighter;
-    font-size: 1.3em;
-    text-align: center;
-  }
-
-  .center .nombre span{
-    color: #e0a80d;
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  .expertise{
-    display: block;
-  }
-  .flexDisplay{
-    background-color: #292a2a;
-  }
-
-  .textAlineCenter{
-    text-align: center;
-    color:#a4a5a6;
-    padding: 10px;
-  }
-  .textAlineCenter span{
-    font-size: 1.5em;
-  }
-
-  .personalInfo{
-    display: none;
-  }
-
-  .whoIAm div{
-    background-color:#313737;
-    color: rgb(212, 229, 246);
-
-    padding: 6px;
-  }
-  .resumen {
-    padding: 15px;
-    font-size: 1.3em;
-    text-align: justify;
-    color: rgba(212, 229, 246,0.5);
-  }
-  /* -----EXPErtiSE */
-  .expertise{
-    padding: 15px;
-    font-size: 1.2em;
-    color: rgba(212, 229, 246,0.5);
-  }
-
-  .expertise span{
-    font-size: 1em;
-    color: #e0a80d;
-  }
-  .expertise h3{
-    font-size: 1em;
-    font-weight: bold;
-    color: rgb(212, 229, 246);
-  }
-
-  /* ---PROGRESS BAR */
-
-  .progressBar{
-    margin-top: 5px;
-    width: 100%;
-    height: 10px;
-    background-color: #404242;
-  }
-
-  .animationProgressBar{
-    width: 1%;
-    height: 10px;
-    background-color: #e9b807;
-  }
-
-  .pgBar{
-    margin-bottom: 20;
-  }
-  /* ----Experience---- */
-  .experience_info span{
-    display: block;
-    margin-bottom: 10px;
-    color: rgba(212, 229, 246,0.5);
-
-    font-size: 0.9em;
-  }
-  .experience_info span:nth-child(2) {
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  .experience_info span:nth-child(6) {
-    font-size: 0.9em;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(133, 138, 143,0.5);
-  }
-  .aligTex{
-    display: none;
-  }
-  .hide_in_phone{
-    display: none;
-  }
-
-  .border_phone{
-    border-bottom: 1px solid rgba(133, 138, 143,0.5);
-    border-top: 1px solid rgba(133, 138, 143,0.5);
-    padding: 20px 0;
-  }
-  /* ---CONTACME-------- */
-  #phone_info{
-    display: block;
-    color: rgba(212, 229, 246,0.5);
-
-  }
-
-  #phone_info div{
-    margin-left: 15px;
-    padding: 20px;
-    max-width: 45%;
-    float: left;
-  }
-  .redesSociales{
-    clear: left;
-    color: rgba(212, 229, 246,0.5);
-    display: flex;
-  }
-  .redesSociales div{
-    padding: 10%;
-    font-size: 2.5em;
-    width: 25%;
   }
 
 
@@ -468,17 +295,24 @@
     padding: 20px 0;
   }
   /* ---CONTACME-------- */
-  #phone_info{
+  .another{
     display: block;
     color: rgba(212, 229, 246,0.5);
-
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  #phone_info div{
-    margin-left: 15px;
-    padding: 20px;
-    max-width: 45%;
+  .another div{
+    padding: 15px;
+    width: 25%;
     float: left;
+  }
+
+  .another div:hover{
+    background-color: rgba(212, 229, 246,0.2);
+    cursor: pointer;
+    border-radius: 30px;
   }
   .redesSociales{
     clear: left;
@@ -503,8 +337,6 @@
 
 }
 
-
-/* RESPONSIVE DESIGN */
 @media screen and (min-width:1201px) {
 
     *{
@@ -657,10 +489,20 @@
     .hideP{
       text-align: left;
       margin-left: 30px;
+      overflow: hidden;
+      color:#a4a5a6;
+      padding: 5px;
+    }
+    .infoExperience{
+      text-align: left;
+      margin-left: 30px;
       height: 150px;
       overflow: hidden;
       color:#a4a5a6;
       padding: 5px;
+    }
+    .marginBotton{
+      margin-bottom: 30px;
     }
     /* PROGRESS BAR  */
     .progressBar{
@@ -770,6 +612,7 @@
     .contact_info{
       margin-top: 40px;
       text-align: center;
+      color: #d4e5f6;
     }
 
     .redesSociales{
