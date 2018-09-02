@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Log-in</title>
+	<link rel="stylesheet" type="text/css" href="public/css/login-style.css">
+</head>
+<body>
+
+	<div class="animation">
+		<div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+	</div>
+	<div class="animation">
+		<div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+	</div>
+	<div class="animation">
+		<div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+	</div>
+	<div class="animation">
+		<div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+	</div>
+
+	<!-- NAVBAR -->
+	<div class="navbar">
+		<div onclick="window.location.href = './index.html';">Resume</div>
+		<div class="active" onclick="window.location.href = './login.html';">Log in</div>
+		<div onclick="window.location.href = './signIn.html';">Sign in</div>
+	</div>
+
+  <!--LOG IN-->
+	<div class="caja-Principal tabcontent" id="login_enter">
+  	<form name="myForm" onsubmit="return false">
+
+    	<div class="titulo" >
+      	<h1>Log in:</h1>
+    	</div>
+
+    	<div class="CajasPrincipales ">
+
+        <div class="cajas">
+        	<div class="dobleCampos">
+            	<div class="cajaPrincipalInfo">
+            		User:
+            		<input type="text" name="logName" placeholder="User">
+            	</div>
+            	<div class="cajaPrincipalInfo" style="margin-left: -20px;">
+            		Password:
+            		<input name="logPass" type="password" placeholder="Password">
+            	</div>
+            </div>
+        </div>
+    	</div>
+      <!-- *********************BOTON SUBMIT****************************** -->
+    	<div style="padding: 15px;">
+    		<input type="submit" value="Entrar" onclick="validar()">
+    	</div>
+  	</form>
+	</div>
+</body>
+</html>
