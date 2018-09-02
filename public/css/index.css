@@ -654,9 +654,10 @@
     }
     .navbar div:nth-child(1){
       margin-left: 70%;
+      border-right: 1px solid gray;
 
     }
-    .navbar div:nth-child(2){
+    .navbar div:nth-child(3){
       border-left: 1px solid gray;
       border-right: 1px solid gray;
     }
