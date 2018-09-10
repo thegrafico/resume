@@ -157,7 +157,42 @@
   .color2{
     background-color: #313737;
   }
-  /* ----------------------- */
+  /* ------- NavBar ------- */
+
+  #menuForPhone{
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    display: inline;
+    color: white;
+    font-size: 1.4em;
+  }
+  .header{
+    width: 100%;
+    background-color: #2d2e2e;
+
+  }
+
+  #forPhone{
+    display: none;
+    position: absolute;
+    left: 5%;
+    width: 80%;
+    height: 40px;
+    border-radius: 2px;
+  }
+
+  #forPhone div{
+    line-height: 40px;
+    text-align: center;
+    min-width: 10%;
+    color:#c6ced6;
+    font-size: 1em;
+  }
+  #forPhone div:nth-child(1){
+    margin-left: 0;
+  }
 
 }
 
@@ -333,8 +368,48 @@
   .color2{
     background-color: #313737;
   }
-  /* ----------------------- */
 
+  /* ------- NavBar ------- */
+  .header{
+    width: 100%;
+    background-color: #2d2e2e;
+  }
+  .navbar{
+    position: absolute;
+    left: 5%;
+    width: 80%;
+    height: 40px;
+    border-radius: 2px;
+    display: flex;
+  }
+
+  .navbar div{
+    line-height: 40px;
+    text-align: center;
+    min-width: 10%;
+    color:#c6ced6;
+    font-size: 1em;
+
+  }
+  .navbar div:nth-child(1){
+    margin-left: 70%;
+    border-right: 1px solid gray;
+
+  }
+  .navbar div:nth-child(3){
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+  .navbar div:hover{
+    cursor: pointer;
+    background-color: rgba(68, 63, 63, 0.8);
+  }
+  .active{
+    background-color: rgba(68, 63, 63, 0.8);
+  }
+  .menuForPhone2{
+    display: none;
+  }
 }
 
 @media screen and (min-width:1201px) {
@@ -629,7 +704,7 @@
       display: flex;
     }
 
-    /* NavBar */
+    /* ------- NavBar ------- */
     .header{
       width: 100%;
       background-color: #2d2e2e;
@@ -647,9 +722,9 @@
     .navbar div{
       line-height: 40px;
       text-align: center;
-      width: 10%;
+      min-width: 10%;
       color:#c6ced6;
-      font-size: 1.3em;
+      font-size: 1.2em;
 
     }
     .navbar div:nth-child(1){
@@ -674,6 +749,9 @@
     }
 
     .experience_info .show_only_in_Phone{
+      display: none;
+    }
+    .menuForPhone2{
       display: none;
     }
 }

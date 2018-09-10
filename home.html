@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="public/css/home_css.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="public/css/homeCss.css">
+
 </head>
 <body>
 
@@ -49,13 +51,20 @@
 	</div>
 
 	<!-- NAVBAR -->
-	<div class="navbar">
-    <div class="active" onclick="window.location.href = './home.html';">Home</div>
-		<div onclick="window.location.href = './index.html';">Resume</div>
-		<div onclick="window.location.href = './login.html';">Log in</div>
-		<div onclick="window.location.href = './signIn.html';">Sign in</div>
-	</div>
+	<div class="MenuBar">
 
+		<div id="menuForPhone" onclick="showMenu()">
+			<i class="fas fa-align-justify"></i>
+		</div>
+
+		<div class="navbar" id="forPhone">
+	    <div class="active" onclick="window.location.href = './home.html';">Home</div>
+			<div onclick="window.location.href = './index.html';">Resume</div>
+			<div onclick="window.location.href = './login.html';">Log in</div>
+			<div onclick="window.location.href = './signIn.html';">Sign in</div>
+		</div>
+
+	</div>
   <!--LOG IN-->
 	<div class="caja-Principal tabcontent" id="login_enter">
   	<div class="header">
@@ -83,9 +92,23 @@
       <div>
         <h1>Proyects</h1>
       </div>
-
     </div>
 
   </div>
+
+	<script type="text/javascript">
+  var showInten = 1;
+  function showMenu(){
+
+    var menu = document.getElementById('forPhone');
+    if(showInten == 1){
+      menu.style.cssText = "display: inline-block; background-color:  rgba(0, 0, 0, 0.9);height: 100px; margin-left: 15%";
+			showInten = 3;
+		}else if( showInten === 2){
+      menu.style.cssText = "display: none";
+    }
+		showInten--;
+  }
+  </script>
 </body>
 </html>

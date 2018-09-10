@@ -8,3 +8,7 @@ This website is static, it will not change. I made sure that this part is just d
 2. Open index.html
 
 //--------------------
+
+
+ *Important note:
+    If you can read this note mean that the only tab with responsive design is index.html 

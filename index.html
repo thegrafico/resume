@@ -13,14 +13,24 @@
 </head>
 <body>
 
-  <div class="header">
-    <div class="navbar">
-      <div onclick="window.location.href = './home.html';">Home</div>
-      <div class="active" onclick="window.location.href = './index.html';">Resume</div>
-      <div onclick="window.location.href = './login.html';">Log in</div>
-      <div onclick="window.location.href = './signIn.html';">Sign in</div>
+
+    <div class="header">
+
+
+      <div id="menuForPhone" class="menuForPhone2" onclick="showMenu()">
+        <i class="fas fa-align-justify"></i>
+      </div>
+
+      <div class="navbar" id="forPhone">
+        <div onclick="window.location.href = './home.html';">Home</div>
+        <div class="active" onclick="window.location.href = './index.html';">Resume</div>
+        <div onclick="window.location.href = './login.html';">Log in</div>
+        <div onclick="window.location.href = './signIn.html';">Sign in</div>
+      </div>
     </div>
-  </div>
+
+
+
   <div class="container">
     <div class="infoDescription color1">
 
@@ -64,13 +74,13 @@
           </div>
 
           <div>
-            <p>Email</p>
-            <p>raul022107@gmail.com</p>
+            <p>Location</p>
+            <p>P.R, SJ</p>
           </div>
 
           <div>
-            <p>Location</p>
-            <p>P.R, SJ</p>
+            <p>Email</p>
+            <p>raul022107@gmail.com</p>
           </div>
 
         </div>
@@ -688,6 +698,19 @@
   <!-- END PART 8 -->
   <script type="text/javascript">
 
+  var showInten = true;
+  function showMenu(){
+
+    var menu = document.getElementById('forPhone');
+    if(showInten && screen.width < 731){
+      menu.style.cssText = "display: inline-block; background-color:  rgba(0, 0, 0, 0.9);height: 200px; margin-left: 15%";
+      showInten = false;
+    }else{
+      menu.style.cssText = "display: none";
+      showInten = true;
+    }
+  }
+
   var loadOneTine = 1;
 
   var waypoint = new Waypoint({
@@ -705,7 +728,7 @@
         loadOneTine++;
       }
     }
-  })
+  });
 
     // FUNTION TO MOVE PROGESS BAR
     function move(id,porciento) {
@@ -721,6 +744,7 @@
         }
       }
     }
+
   </script>
 </body>
 </html>
